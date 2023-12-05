@@ -5,11 +5,11 @@ body{
     background: #102702
 }
 
-h1 {
-    width: 957px; 
-    height: 124px; 
-    left: 43px; 
-    top: 31px; 
+header h1 {
+    width: 500px;
+    height: 100px;
+    top: 1px;
+    left: 297px;
     position: absolute; 
     text-align: center; 
     color: #BAFE1B; 
@@ -90,12 +90,18 @@ header > div > div {
     border-radius: 20px;
 }
 
-header > div > img {
+header > div > div > img {
     width: 20px; 
     height: 20px; 
     right: 8px; 
     top: 9px; 
     position: absolute;
+}
+
+header > div > div > img {
+    width: 60%; 
+    height: 60%;
+    
 }
 
 article h2{
@@ -110,4 +116,95 @@ article h2{
     font-family: Inter;
     font-weight: 700;
     word-wrap: break-word;
+}
+
+article > p{
+    width: 346px;
+    height: 206px;
+    left: 364px;
+    top: 205px;
+    position: absolute;
+    text-align: justify;
+    color: #102702;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+article{
+    width: 746px;
+    height: 506px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #8AC791;
+    border-radius: 20px;
+    width: 746px;
+    height: 506px;
+    left: 254px;
+    top: 168px;
+    position: absolute
+}
+
+article img{
+    width: 289.05px;
+    height: 441.55px;
+    left: 41px;
+    top: 32px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+nav {
+    width: 193px; 
+    height: 370px; 
+    left: 13px; 
+    top: 231px; 
+    position: absolute;
+    border-radius: 20px;
+    background: #225606;
+
+}
+
+nav > ul {
+    list-style-type: none;
+    
+    position: absolute; 
+    color: #E4FDD8; 
+    font-size: 25px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+nav > ul  >li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.menu_deroulant > a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+.sous_menu {
+    display: none;
+    font-style: italic;
+    font-size: 15px;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+
+nav > ul > li:onclick {
+    display: block;
+}
+
+.sous_menu > li{
+    float: none;
+    width: 100%;
+    text-align:left;
 }
