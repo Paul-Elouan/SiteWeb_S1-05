@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-container {
+      width: 200px;
+      background-color: #333;
+    }
+
+    .menu-item {
+      padding: 15px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+
+    .menu-item:hover {
+      background-color: #555;
+    }
+
+    .submenu {
+      display: none;
+      background-color: #444;
+      padding-left: 20px; /* Add padding to create hierarchy */
+    }
+
+    .submenu-toggle:active {
+
+    }
+    .submenu-item {
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+
+    .submenu-item:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <a href="#" class="menu-item">Accueil</a>
+    <a href="#" class="menu-item" id="submenu-toggle">Produits</a>
+    <div class="submenu">
+      <a href="#" class="submenu-item">Sous-menu 1</a>
+      <a href="#" class="submenu-item">Sous-menu 2</a>
+      <a href="#" class="submenu-item">Sous-menu 3</a>
+    </div>
+    <a href="#" class="menu-item">Services</a>
+    <a href="#" class="menu-item">Contact</a>
+  </div>
+
+  <script>
+    // Ajoutez un gestionnaire d'événements pour basculer la visibilité du sous-menu au clic
+    document.getElementById('submenu-toggle').addEventListener('click', function () {
+      var submenu = document.querySelector('.submenu');
+      submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+    });
+  </script>
+
+</body>
+</html>

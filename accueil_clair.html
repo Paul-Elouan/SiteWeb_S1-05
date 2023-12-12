@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-		<title>Accueil Sombre</title>
+		<title>Accueil Clair</title>
 		
 		<!--Mise en place du lien avec le fichier css-->
 		<link rel="stylesheet" type="text/css" href="style_accueil_clair.css" >
@@ -53,7 +53,7 @@
                 </ul>
             </nav>
             <figure>
-                <img src="images\Light button.svg" alt="" title="">
+                <img src="images/Button night.svg" alt="" title="">
             </figure>
            <aside>
             
@@ -62,5 +62,13 @@
         <footer>
             <p>À propos • Nous contacter • Mentions légales</p>
         </footer>
+        <script>
+            // Ajoutez un gestionnaire d'événements pour basculer la visibilité du sous-menu au clic
+            document.getElementById('submenu-toggle').addEventListener('click', function () {
+              var submenu = document.querySelector('.submenu');
+              submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+            });
+        </script>
     </body>
+    
 </html>
