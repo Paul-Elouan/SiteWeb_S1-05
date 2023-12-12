@@ -19,6 +19,12 @@ header h2{
 
 main div{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main div div{
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
