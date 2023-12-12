@@ -1,6 +1,11 @@
 body{
     background-color: #102702;
 }
+header div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
 header h1{
     color: #bafe1b;
