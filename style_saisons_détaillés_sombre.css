@@ -31,6 +31,12 @@ font-family: NATS;
 font-weight: 400;
 word-wrap: break-word"
 }
+header p{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+}
 
 footer{
 width: 1193.92px;
@@ -99,8 +105,6 @@ border-radius: 20px
 .acteurs img{
 width: 208px;
 height: 294px;
-left: 7px;
-top: 0px;
 position:absolute
 }
 
@@ -117,5 +121,3 @@ font-family: Inter;
 font-weight: 700;
 word-wrap: break-word
 }
-
-width: 222px; height: 351px; left: 429px; top: 445px; position: absolute"
