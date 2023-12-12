@@ -94,11 +94,28 @@ top: 0px;
 position: absolute;
 background: #8AC791;
 border-radius: 20px
-    <div style="width: 222px; height: 351px; left: 429px; top: 445px; position: absolute">
+}
 
-    <img style="width: 208px; height: 294px; left: 7px; top: 0px; position: absolute" src="https://via.placeholder.com/208x294" />
+.acteurs img{
+width: 208px;
+height: 294px;
+left: 7px;
+top: 0px;
+position:absolute
 }
 
 figcaption{
-    <div style="width: 222px; height: 61px; left: 0px; top: 290px; position: absolute; text-align: justify; color: #102702; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word"
+width: 222px;
+height: 61px;
+left: 0px;
+top: 290px;
+position: absolute;
+text-align: justify;
+color: #102702;
+font-size: 30px;
+font-family: Inter;
+font-weight: 700;
+word-wrap: break-word
 }
+
+width: 222px; height: 351px; left: 429px; top: 445px; position: absolute"
