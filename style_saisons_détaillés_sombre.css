@@ -2,10 +2,29 @@ body{
     background-color: #102702;
 }
 
+header h1{
+    color: #bafe1b;
+    text-align: center;
+}
+
+header h2{
+    color: #bafe1b;
+    text-align: right;
+}
+
 main div{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 main article{
     background-color: #8AC791;
+    margin: 10em;
+    padding: 10em;
+}
+
+footer {
+    background-color: #225606;
+    padding: 1em;
 }
