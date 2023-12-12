@@ -250,4 +250,14 @@ nav {
     left: 1191px; 
     top: 674px; 
     position: absolute;
+    background: #E4FDD8; 
+    border-radius: 9999px;
+  }
+
+  main > img {
+    width: 73px;
+    height: 73px;
+    flex-shrink: 0;
+    position: absolute;
+    background: #000;
   }
