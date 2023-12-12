@@ -1,3 +1,8 @@
+html {
+  width: 1280px;
+  height: 832px;
+}
+
 body{
     width: 100%;
     height: 100%;
@@ -38,22 +43,20 @@ article {
 footer {
     width: 1280px; 
     height: 74px; 
-    left: 0px; 
-    top: 758px; 
+    bottom: 0px;
+    padding-top: 6px;
     position: absolute;
     background: #225606;
 }
 
 footer > p {
-    left: 426px; 
-    top: 25px; 
+    left: 426px;
     position: absolute; 
-    text-align: center; 
     color: #E4FDD8; 
-    font-size: 20px; 
+    font-size: 20px;
+    align-self: center;
     font-family: Inter; 
     font-weight: 700; 
-    word-wrap: break-word;
 }
 
 header > div {
@@ -239,4 +242,12 @@ nav {
   }
   .dropdownmenu ul li:hover a {
     color: #f00; /* Couleur du texte des sous-menu au survol */
+  }
+
+  main > figure {
+    width: 73px; 
+    height: 73px; 
+    left: 1191px; 
+    top: 674px; 
+    position: absolute;
   }
