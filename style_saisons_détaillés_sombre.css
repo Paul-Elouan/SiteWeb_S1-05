@@ -50,6 +50,10 @@ header a{
     color: #225606;
 }
 
+main{
+    width: 100%;
+    column-count: 2;
+}
 main div{
     display: flex;
     flex-direction: column;
@@ -58,15 +62,45 @@ main div{
 
 main div div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
 }
 
 main article{
     background-color: #8AC791;
-    margin: 10em;
-    padding: 10em;
+    margin: 5em;
+    padding: 5em;
     border-radius: 20px;
+    width: 560px;
+    
+}
+
+.realisateur{
+    display: flex;
+    align-self: flex-end;
+}
+
+.acteurs{
+    align-self: flex-end;
+    display: flex;
+}
+
+.age img{
+    width: 560px;
+}
+
+.BA img{
+    height: 315px;
+    width: 560px;
+}
+
+.episodes{
+    display: flex;
+    height: 300px;
+}
+
+.episodes p{
+    width: 100px;
 }
 
 main article img{
