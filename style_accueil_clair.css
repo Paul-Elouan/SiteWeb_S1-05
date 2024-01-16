@@ -167,61 +167,46 @@ nav {
 }
 
 
+
+body {
+  text-decoration: none;
+}
+
   /* Dropdown menu */
  
   .dropdownmenu,
   .dropdownmenu ul {
     /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
     list-style-type: none;
+    
   }
   .dropdownmenu ul {
     /* Masquage des sous-menu par defaut */
     display: none;
   }
   
+  .dropdownmenu li {
+    padding-top: 60px;
+  }
+
+  .dropdownmenu li>ul>li {
+    padding-top: 5px;
+  }
   .dropdownmenu a {
     /* On transforme les liens en bloc pour pouvoir les dimensionner */
     display: block;
   }
-  .dropdownmenu li:active ul {
+  .dropdownmenu li:hover ul {
     /* Affichage du soumenu au survol */
     display: block;
+    padding-bottom: 10px;
   
     /* Positionnement du sous-menu */
     position: absolute;
     text-decoration: none;
    
   }
-  .dropdownmenu ul a {
-    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher en inline-block comme les liens de menu, ils seront donc verticaux */
-    display: block;
-  }
-  
-  /* Gestion des couleurs */
-  .dropdownmenu li {
-    background-color: #666; /* Couleur d'arriere-plan du menu */
-  }
-  .dropdownmenu li a {
-    color: #ccc; /* Couleur du texte du menu */
-  }
-  .dropdownmenu li:hover {
-    background-color: #000; /* Couleur d'arriere-plan du menu au survol */
-  }
-  .dropdownmenu li:hover a {
-    color: #fff; /* Couleur du texte du menu au survol */
-  }
-  .dropdownmenu ul li {
-    background-color: #ccc; /* Couleur d'arriere-plan des sous-menu */
-  }
-  .dropdownmenu ul li:hover {
-    background-color: #000; /* Couleur d'arriere-plan des sous-menu au survol */
-  }
-  .dropdownmenu ul li a {
-    color: #666; /* Couleur du texte des sous-menu */
-  }
-  .dropdownmenu ul li:hover a {
-    color: #f00; /* Couleur du texte des sous-menu au survol */
-  }
+ 
 
   main > figure {
     left: 1171px; 
@@ -247,3 +232,32 @@ nav {
     flex-shrink: 0;
     border-radius: 20px;
   }
+
+
+/* Media Queries for different screen sizes */
+@media screen and (max-width: 1280px) {
+  /* Styles for MacBook */
+  body {
+    font-size: 16px; /* Adjust font size for MacBook */
+  }
+
+  /* Add any additional styles for MacBook screen here */
+}
+
+@media screen and (max-width: 1440px) {
+  /* Styles for regular computer screen */
+  body {
+    font-size: 18px; /* Adjust font size for regular computer screen */
+  }
+
+  /* Add any additional styles for regular computer screen here */
+}
+
+@media screen and (max-width: 428px) {
+  /* Styles for iPhone 13 or similar devices */
+  body {
+    font-size: 14px; /* Adjust font size for iPhone 13 */
+  }
+
+  /* Add any additional styles for iPhone 13 here */
+}
