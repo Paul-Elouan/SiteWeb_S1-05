@@ -297,3 +297,8 @@ nav {
     flex-shrink: 0;
     border-radius: 20px;
   }
+
+aside img {
+  width: 194;
+  height: 259;
+}
