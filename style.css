@@ -1,0 +1,62 @@
+:root {
+  --color-background-light: #e4fdd8;
+  --color-accent-light: #544b27;
+  --color-primary-light: #8ac791;
+  --color-secondary-light: #c5f9a9;
+
+  --color-background-dark: #102702;
+  --color-accent-dark: #bafe1b;
+  --color-primary-dark: #8ac791;
+  --color-secondary-dark: #225606;
+}
+
+.dark-mode {
+  --color-background-dark: #e4fdd8;
+  --color-accent-dark: #544b27;
+  --color-primary-dark: #8ac791;
+  --color-secondary-dark: #c5f9a9;
+
+  --color-background-light: #102702;
+  --color-accent-light: #bafe1b;
+  --color-primary-light: #8ac791;
+  --color-secondary-light: #225606;
+}
+
+header h1 {
+  width: 500px;
+  height: 100px;
+  top: 1px;
+  left: 297px;
+  position: absolute;
+  text-align: center;
+  color: var(--color-accent-light);
+  font-size: 75px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+article {
+  position: absolute;
+  background: var(--color-primary-light);
+  border-radius: 20px;
+}
+
+footer {
+  width: 1280px;
+  height: 74px;
+  bottom: 0px;
+  padding-top: 6px;
+  position: absolute;
+  background: var(--color-secondary-light);
+}
+
+footer > p {
+  left: 426px;
+  position: absolute;
+  color: var(--color-background-dark);
+  font-size: 20px;
+  align-self: center;
+  font-family: Inter;
+  font-weight: 700;
+}

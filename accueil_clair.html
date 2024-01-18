@@ -55,9 +55,57 @@
             <figure>
                 <img src="images/Accueil/icones/Button_light.svg" alt="" title="">
             </figure>
-           <aside>
-            
-           </aside>
+            <aside>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/Liste_des_saisons/affiche_saisons/0af1561bdddd5bde7d490ec2d7fc6f7273efa6f8.png" alt="Image 1">
+                    </div>
+                
+                    <div class="slide fade">
+                        <img src="images/Liste_des_saisons/affiche_saisons/51a46019d71f435b11fb2bfb08f5c2eefbb3cee4.jpg" alt="Image 2">
+                    </div>
+                
+                    <div class="slide fade">
+                        <img src="images/Liste_des_saisons/affiche_saisons/affiche_serie.png" alt="Image 3">
+                    </div>
+                
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                
+                    function showSlides() {
+                        let i;
+                        const slides = document.getElementsByClassName("slide");
+                        const dots = document.getElementsByClassName("dot");
+                
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                
+                        slideIndex++;
+                
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                        }
+                
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                
+                        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+                    }
+                </script>
+            </aside>
         </main>
         <footer>
             <p>À propos • Nous contacter • Mentions légales</p>
