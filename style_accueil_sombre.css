@@ -1,6 +1,5 @@
 html {
-  width: 1280px;
-  height: 832px;
+  
 }
 
 body{
@@ -43,20 +42,22 @@ article {
 footer {
     width: 1280px; 
     height: 74px; 
-    bottom: 0px;
-    padding-top: 6px;
+    left: 0px; 
+    top: 758px; 
     position: absolute;
     background: #225606;
 }
 
 footer > p {
-    left: 426px;
+    left: 426px; 
+    top: 25px; 
     position: absolute; 
+    text-align: center; 
     color: #E4FDD8; 
-    font-size: 20px;
-    align-self: center;
+    font-size: 20px; 
     font-family: Inter; 
     font-weight: 700; 
+    word-wrap: break-word;
 }
 
 header > div {
@@ -136,6 +137,10 @@ article > p{
 }
 
 article{
+    width: 746px;
+    height: 506px;
+    left: 0px;
+    top: 0px;
     position: absolute;
     background: #8AC791;
     border-radius: 20px;
@@ -239,66 +244,3 @@ nav {
   .dropdownmenu ul li:hover a {
     color: #f00; /* Couleur du texte des sous-menu au survol */
   }
-
-  .menu-container {
-    width: 200px;
-    background-color: #333;
-  }
-
-  .menu-item {
-    padding: 15px;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-  }
-
-  .menu-item:hover {
-    background-color: #555;
-  }
-
-  .submenu {
-    display: none;
-    background-color: #444;
-    padding-left: 20px; /* Add padding to create hierarchy */
-  }
-
-  .submenu-item {
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-  }
-
-  .submenu-item:hover {
-    background-color: #666;
-  }
-
-  main > figure {
-    left: 1171px; 
-    top: 664px; 
-    position: absolute;
-    border-radius: 9999px;
-  }
-
-  main > figure > img {
-    width: 60px; 
-    height: 60px; 
-    flex-shrink: 0;
-    position: absolute;
-  }
-
-  aside {
-    width: 226px;
-    height: 506px;
-    left: 1054px;
-    top: 168px;
-    position: absolute;
-    background: #8AC791;
-    flex-shrink: 0;
-    border-radius: 20px;
-  }
-
-aside img {
-  width: 194;
-  height: 259;
-}
