@@ -40,8 +40,8 @@ footer {
     height: 74px;
     padding-top: 6px;
     display: flex;
-    align-self: flex-end;
-    position: relative;
+    bottom: 0px;
+    position: absolute;
     bottom: 0%;
     background: #C5F9A9;
 }
@@ -122,6 +122,8 @@ article{
     border-radius: 20px;
     width: 746px;
     height: 506px;
+    position: fixed;
+    align-self: center;
 }
 
 article img{
@@ -131,10 +133,12 @@ article img{
 }
 
 nav {
-    width: 193px; 
-    height: 370px; 
-    border-radius: 20px;
-    background: #C5F9A9;
+  width: 193px; 
+  height: 370px; 
+  border-radius: 20px;
+  background: #C5F9A9;
+  position: sticky;
+  left: 20px;
 
 }
 
@@ -165,6 +169,8 @@ aside img {
 
 aside {
   padding: 10px;
+  position: sticky;
+  right: 0px;
 }
 /* Styling for navigation dots */
 .dot {
@@ -226,14 +232,14 @@ body {
     height: 100%;
     display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		justify-content: space-around;
   }
 
   main > figure {
     left: 1171px; 
     top: 664px; 
-    position: absolute;
+    position: fixed;
     border-radius: 9999px;
   }
 
@@ -256,30 +262,29 @@ body {
   }
 
 
-/* Media Queries for different screen sizes */
+
+/* 
 @media screen and (max-width: 1280px) {
-  /* Styles for MacBook */
-  body {
-    font-size: 16px; /* Adjust font size for MacBook */
+ 
+    font-size: 16px; 
   }
 
-  /* Add any additional styles for MacBook screen here */
-}
+  
+}*/
 
-@media screen and (max-width: 1440px) {
-  /* Styles for regular computer screen */
+/*@media screen and (max-width: 1440px) {
+  
   body {
-    font-size: 18px; /* Adjust font size for regular computer screen */
+    font-size: 18px; 
   }
 
-  /* Add any additional styles for regular computer screen here */
-}
+  
+}*/
 
-@media screen and (max-width: 428px) {
-  /* Styles for iPhone 13 or similar devices */
+/*@media screen and (max-width: 428px) {
   body {
-    font-size: 14px; /* Adjust font size for iPhone 13 */
+    font-size: 14px; 
   }
 
-  /* Add any additional styles for iPhone 13 here */
-}
+  
+}*/
