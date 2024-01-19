@@ -2,7 +2,8 @@
 body{
     width: 100%;
     height: 100%;
-    position: relative;
+    padding: 0;
+    margin: 0;
     background: #102702
 }
 
@@ -10,20 +11,23 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-between; 
   align-items: center;
+}
+
+.menu_burger {
+  display: none;
 }
 
 header h1 {
     width: 500px;
     height: 100px;
-    position: relative;
     text-align: justify;
+    align-self: center;
     color: #BAFE1B; 
     font-size: 75px; 
     font-family: Inter; 
     font-weight: 700; 
-    word-wrap: break-word;
 }
 
 header img {
@@ -40,10 +44,10 @@ header div p{
 
 
 footer {
-    width: 100%; 
-    height: 74px; 
-    bottom: 0px;
-    position: fixed;
+    width: 100%;  
+    height: 74px;
+    padding: 30px;
+    text-align: center;
     background: #225606;
 }
 
@@ -79,18 +83,18 @@ input[type="search"] {
   float: left;
   margin-top: 10px;
   font-family: Inter; 
-    font-weight: 700; 
-    word-wrap: break-word;
+  font-weight: 700; 
+  word-wrap: break-word;
 }
 
-header > div > div {
+header > div :nth-child(2) {
     width: 36px; 
     height: 38px; 
     background: #225606; 
     display: inline-block;
     position: relative;
     clear: left;
-    margin-left: 85px;
+    margin-left: 20px;
     margin-top: 7px;
     border-radius: 20px;
 }
@@ -100,6 +104,10 @@ header > div > div > img {
     height: 20px; 
     padding-left: 6px;
     padding-top: 8px;
+    position: relative;
+    left: 17.5em;
+    bottom: 2.25em;
+    border-radius: 20px;
 }
 /*
 header > div > div > img {
@@ -125,6 +133,9 @@ article h2{
     font-size: 50px;
     font-family: Inter;
     font-weight: 700;
+    position: relative;
+    bottom: 11em;
+    left: 6.5em;
     word-wrap: break-word;
 }
 
@@ -147,16 +158,14 @@ article img{
     width: 289.05px;
     height: 441.55px;
     position: relative;
-    float: left;
-    /*
-    left: 41px;
-    top: 32px;*/
+    left: 2em;
+    bottom: 4.75em;
     border-radius: 20px;
 }
 
 article > p{
-  width: 346px;
-  height: 206px;/*
+  width: 400px;
+  height: 70px;/*
   left: 364px;
   top: 205px;*/
   text-align: justify;
@@ -165,10 +174,13 @@ article > p{
   font-family: Inter;
   font-weight: 700;
   position: relative;
-  clear: left;
+  left: 17.5em;
+  top: 10em;
   word-wrap: break-word;
 
 }
+
+
 
 nav {
     width: 193px; 
@@ -179,6 +191,9 @@ nav {
     border-radius: 20px;
     background: #225606;
     flex-grow: 1;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
 
 }
 
@@ -194,10 +209,12 @@ img {
 
 aside img {
   width: 100%;
-  height: auto;
-  margin-top: 5em;
+  height: 85%;
 }
 
+aside > h2{
+  text-align: center;
+}
 aside {
   width: 226px;
   height: 506px;
@@ -207,6 +224,9 @@ aside {
   background-color: #8AC791;
   border-radius: 20px;
   flex-grow: 1;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 2em;
 }
 
  /* Dropdown menu */
@@ -271,4 +291,106 @@ aside {
 
 .active {
   background-color: #717171;
+}
+
+@media screen and (max-width: 750px)
+{   
+    main{
+        orientation: portrait;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+      padding: 10px;
+    }
+    header > img{
+      margin-top: 10px;
+      width: 5em;
+      height: 5em;
+    }
+    header h1{
+      position: absolute;
+      font-size: 3em;
+      text-align: center;
+    }
+
+    article {
+      width: 80%;
+      padding: 0;
+      height: 300px;
+    }
+    
+    header > div {
+      position: relative;
+      top: 5px;
+      left: 5em;
+    }
+    article > img{
+      width: 100%;
+      width: 84%;
+      top: 21em;
+    }
+    article > h2{
+      width: 80%;
+      position: relative;
+      left: 35px;
+      bottom: 12.5em;
+      font-size: 45px;
+    }
+    article > p{
+      width: 80%;
+      position: relative;
+      top: 6em;
+      left: 37px;
+      text-align: justify;
+    }
+    
+    header nav{
+        display: none;
+    }
+    
+    aside{
+      display: none;
+    }
+
+    
+    
+    .menu_grand {
+      display: none;
+    }
+
+    .menu_burger{
+      position: relative;
+      display: block;
+      bottom: 8.75em;
+      right: 13em;
+    }
+
+    .burger-menu {
+      position: relative;
+      top: 15em;
+      
+      transform: translateY(-50%);
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+    }
+    
+    .line {
+      display: block;
+      width: 100%;
+      height: 0.25rem;
+      background-color: #BAFE1B;
+      margin: 0.2rem 0;
+    }
+    
+    .menu {
+      display: none;
+    }
+    
+    /* Show the menu when the burger menu is clicked */
+    .burger-menu.open + .menu {
+      display: block;
+    }
 }

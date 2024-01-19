@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Barre de recherche</title>
-</>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test_barre_de_recherche.css">
+    <title>Search Bar Example</title>
+</head>
 <body>
-	<input type="text" id="searchBox" onkeyup="searchFunction()" placeholder="Rechercher..">
-	<div id="searchResults"></div>
+
+<div class="search-container">
+    <input type="search" id="searchBox" placeholder="Search...">
+    <ul id="searchResults" class="search-results"></ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var searchBox = document.getElementById('searchBox');
+        var searchResults = document.getElementById('searchResults');
+
+        searchBox.addEventListener('input', function () {
+            var query = this.value.toLowerCase();
+            searchResults.innerHTML = '';
+
+            if (query.trim() !== '') {
+                // Simulated search results, you can replace this with your own data or fetch from a server
+                var mockData = ['Result 1', 'Result 2', 'Result 3', 'Result 4', 'Result 5'];
+
+                mockData.forEach(function (result) {
+                    if (result.toLowerCase().includes(query)) {
+                        var li = document.createElement('li');
+                        li.textContent = result;
+                        li.addEventListener('click', function () {
+                            alert('Selected: ' + result);
+                        });
+                        searchResults.appendChild(li);
+                    }
+                });
+
+                if (searchResults.children.length > 0) {
+                    searchResults.style.display = 'block';
+                } else {
+                    searchResults.style.display = 'none';
+                }
+            } else {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // Close search results when clicking outside the search container
+        document.addEventListener('click', function (event) {
+            if (!searchBox.contains(event.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
