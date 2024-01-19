@@ -244,9 +244,11 @@ header div img{
         display: none;
     }
     header h3{
-        display: inline;
         color: #E4FDD8;
-        padding-left: 1em;
+        display: inline;
+        font-size: 1.17em;
+        width: 100%;
+        justify-content: center;
     }
     header nav{
         display: none;
@@ -296,7 +298,7 @@ header div img{
         text-align: center;
     }
     .mobile-container {
-        display: inline;
+        display: flex;
         margin: auto;
         color: #102702;
         border-radius: 10px;
@@ -306,6 +308,7 @@ header div img{
         display: inline;
         overflow: hidden;
         position: relative;
+        flex-wrap: nowrap;
     }
     
     .topnav #myLinks {
@@ -331,6 +334,7 @@ header div img{
 
     .topnav a{
         background-color: #225606;
+        text-align: center;
     }
 
     .topnav a:hover {
@@ -351,6 +355,8 @@ header div img{
     .topnav img{
         border-radius: 0;
     }
+
+
 
     
 }
