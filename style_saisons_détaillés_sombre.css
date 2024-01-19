@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'tussilago';
+    src: url(“polices/tussilagorg-regular.woff2”) format(“woff2”),
+    url(polices/tussilagorg-regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     background-color: #102702;
+    font-family: 'tussilago';
 }
 header div{
     display: flex;
@@ -29,6 +37,9 @@ header nav{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+.menu-burger{
+    display: none;
 }
 header h3{
     display: none;
@@ -195,7 +206,6 @@ img{
 }
 
 header div img{
-    border-radius: 1000px;
     width: 195px;
 }
 
@@ -206,6 +216,12 @@ header div img{
 .limite_age img{
     height: 215px;
     width: 215px;
+}
+.mobile-container{
+    display: none;
+}
+.topnav{
+    display: none;
 }
 
 @media screen and (max-width: 428px)
@@ -232,12 +248,8 @@ header div img{
         color: #E4FDD8;
         padding-left: 1em;
     }
-    .Burger{
-        display: inline;
-        border-radius: 0;
-    }
     header nav{
-        width: 250px;
+        display: none;
     }
     main{
         margin-right: 1em;
@@ -283,4 +295,68 @@ header div img{
         width: 93%;
         text-align: center;
     }
+    .mobile-container {
+        display: inline;
+        margin: auto;
+        color: #102702;
+        border-radius: 10px;
+    }
+    
+    .topnav {
+        display: inline;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+        color: #102702;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        align-self: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .topnav a.icon {
+        background: #102702;
+        display: inline;
+        align-self: center;
+
+    }
+
+    .topnav a{
+        background-color: #225606;
+    }
+
+    .topnav a:hover {
+        background-color: #8AC791;
+        color: black;
+
+    }
+
+    .topnav a.icon:hover{
+        background-color: #102702;
+    }
+    
+    .active {
+        background-color: #8AC791;
+        color: #102702;
+    }
+
+    .topnav img{
+        border-radius: 0;
+    }
+
+    
 }
+
+
+
+
+
+

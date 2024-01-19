@@ -4,6 +4,7 @@
     <meta charset="utf-8" name="author" content="Mabit Baptiste">
     <title>Page des saisons détaillé</title>
     <link rel="stylesheet" href="style_saisons_détaillés_sombre.css">
+    <script src="burger.js"></script>
 </head>
 <body>
     <header>
@@ -15,16 +16,38 @@
             </div>
         </div>
         <nav>
-            <img class="Burger" src="images/Menuburger.png">
             <img src="images/fleche.png">
             <h3>Family Business</h3>
-            <p class="bordGauche">Séries</p>
-            <p>Critiques</p>
-            <p>Backstages</p>
-            <p><a>Saison 1</a></p>
-            <p>Saison 2</p>
-            <p class="bordDroit">Saison 3</p>
+            <div>
+                <p class="bordGauche">Séries</p>
+                <p>Critiques</p>
+                <p>Backstages</p>
+                <p><a>Saison 1</a></p>
+                <p>Saison 2</p>
+                <p class="bordDroit">Saison 3</p>
+            </div>
         </nav>
+        <nav class="mobile-container">
+            <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <img src="images/Menuburger.png">
+                    <img src="images/fleche.png">
+                </a>
+                <h3>Family Business</h3>
+                <div id="myLinks">
+                    <a>Séries</a>
+                    <a>Critiques</a>
+                    <a>Backstages</a>
+                    <a>Saison 1</a>
+                    <a>Saison 2</a>
+                    <a>Saison 3</a>
+                </div>
+                
+            </div>
+            
+        </nav>
+        </div>
     </header>
     <main>
         <div>
