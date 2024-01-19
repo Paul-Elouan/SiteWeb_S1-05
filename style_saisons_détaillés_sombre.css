@@ -2,7 +2,11 @@ body{
     background-color: #102702;
 }
 header div{
-    
+    display: flex;
+    justify-content: space-between;
+}
+
+header div div{
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
@@ -10,12 +14,15 @@ header div{
 
 header h1{
     color: #bafe1b;
+    align-items: center;
+    align-self: center;
     text-align: center;
 }
 
 header h2{
     color: #bafe1b;
     text-align: right;
+    align-self: flex-end;
 }
 
 header nav{
@@ -23,9 +30,22 @@ header nav{
     flex-direction: row;
     flex-wrap: nowrap;
 }
-
+header h3{
+    display: none;
+}
 header nav{
     justify-content: center;
+}
+
+nav img{
+    height: 48px;
+    width: 48px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.Burger{
+    display: none;
 }
 
 header p{
@@ -50,57 +70,33 @@ header a{
     color: #225606;
 }
 
-main{
-    width: 100%;
-    column-count: 2;
-}
+
+
+
 main div{
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
 }
 
 main div div{
+    width : 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
 main article{
     background-color: #8AC791;
-    margin: 5em;
-    padding: 5em;
+    width: 90%;
+    height : auto;
+    margin: 1em;
+    padding: 1em;
     border-radius: 20px;
-    width: 560px;
-    
-}
-
-.realisateur{
-    display: flex;
-    align-self: flex-end;
-}
-
-.acteurs{
-    align-self: flex-end;
-    display: flex;
-}
-
-.age img{
-    width: 560px;
-}
-
-.BA img{
-    height: 315px;
-    width: 560px;
-}
-
-.episodes{
-    display: flex;
-    height: 300px;
-}
-
-.episodes p{
-    width: 100px;
+    flex-shrink: 0;
 }
 
 main article img{
@@ -109,13 +105,182 @@ main article img{
 
 main iframe{
     border-radius: 20px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.episode{
+    display :flex;
+}
+
+.episode div{
+    flex-direction: column;
+}
+
+.episode h2{
+    width: 100%;
+    text-align: center;
+}
+
+.episode div div{
+    flex-direction: row;
+    width: 100%;
+}
+
+.episode div div div{
+    flex-direction: column;
+    width: 50%;
+}
+
+.episode figure{
+    width: 50%;
+    margin: 0;
+}
+
+.episode figure figcaption{
+    text-align: center;
+}
+
+
+
+
+
+.acteurs{
+    display: flex;
+    flex-direction: row;
 }
 
 footer {
     background-color: #225606;
     padding: 1em;
+    text-align: center;
 }
 
 img{
     border-radius: 40px;
+    flex-shrink: 0;
+}
+
+.acteurs img{
+    align-self: center;
+    max-width: 208px;
+    max-height: 295px;
+}
+
+.acteurs div{
+    width: 50%;
+}
+
+.episode img{
+    width: 180px;
+    height: 103px;
+}
+
+.real img{
+    max-width: 170px;
+    max-height: 170px;
+    margin: 1em;
+}
+
+.real div{
+    display: flex;
+}
+
+.real div div{
+    flex-direction: row;
+}
+
+header div img{
+    border-radius: 1000px;
+    width: 195px;
+}
+
+.bandeAnnonce img{
+    max-width: 100%;
+}
+
+.limite_age img{
+    height: 215px;
+    width: 215px;
+}
+
+@media screen and (max-width: 428px)
+{   
+    body{
+        orientation: portrait;
+    }
+    body div{
+        flex-direction: column;
+        width: 100%;
+    }
+    header div img{
+        width: 80px;
+        height: 80px;
+    }
+    header h1{
+        text-align: center;
+    }
+    header h2{
+        display: none;
+    }
+    header h3{
+        display: inline;
+        color: #E4FDD8;
+        padding-left: 1em;
+    }
+    .Burger{
+        display: inline;
+        border-radius: 0;
+    }
+    header nav{
+        width: 250px;
+    }
+    main{
+        margin-right: 1em;
+    }
+    .bandeAnnonce{
+        display: none;
+    }
+    nav p{
+        display: none;
+    }
+    header div h2{
+        text-align: center;
+    }
+    .episode div div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .episode div div div{
+        width: 100%;
+    }
+    .episode figure{
+        width: 100%;
+    }
+    .episode img{
+        width: 100%;
+        height: 85%;
+    }
+    .acteurs div{
+        width: 50%;
+    }
+    
+    .limite_age img{
+        justify-content: center;
+        margin-left: 20%;
+    }
+    .limite_age p{
+        text-align: center;
+    }
+    .acteurs img{
+        max-width: 100px;
+    }
+    footer{
+        width: 93%;
+        text-align: center;
+    }
 }
