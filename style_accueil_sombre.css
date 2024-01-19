@@ -29,10 +29,9 @@ header h1 {
 header img {
     width: 194px; 
     height: 196px;
-    top: 22px;
-    left: 23px;
     position: relative;
-    left: 0px;
+    float: left;
+    padding-right: 10em;
 }
 
 header div p{
@@ -62,18 +61,24 @@ header > div {
     height: 52px; 
     background: #BAFE1B; 
     border-radius: 20px;
+    padding-left: 10px;
 }
 
-header > div > p {
-    width: 173px; 
-    height: 20px; 
-    left: 23px; 
-    top: 3px; 
-    position: absolute; 
-    text-align: center; 
-    color: #102702; 
-    font-size: 15px; 
-    font-family: Inter; 
+
+input[type="search"] {
+  background-color: #BAFE1B;
+  border: none;
+  border-radius: 25px;
+  color: #102702;
+  font-size: 15px;
+  height: 30px;
+  outline: none;
+  padding: 6px 12px;
+  width: 80%;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  font-family: Inter; 
     font-weight: 700; 
     word-wrap: break-word;
 }
@@ -81,32 +86,33 @@ header > div > p {
 header > div > div {
     width: 36px; 
     height: 38px; 
-    right: 5px; 
-    top: 7px; 
-    position: absolute; 
     background: #225606; 
+    display: inline-block;
+    position: relative;
+    clear: left;
+    margin-left: 85px;
+    margin-top: 7px;
     border-radius: 20px;
 }
 
 header > div > div > img {
     width: 20px; 
     height: 20px; 
-    right: 8px; 
-    top: 9px; 
-    position: absolute;
+    padding-left: 6px;
+    padding-top: 8px;
 }
-
+/*
 header > div > div > img {
     width: 60%; 
     height: 60%;
     
-}
+}*/
 
 main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
 
 article h2{
@@ -122,18 +128,8 @@ article h2{
     word-wrap: break-word;
 }
 
-article > p{
-    width: 346px;
-    height: 206px;/*
-    left: 364px;
-    top: 205px;*/
-    text-align: justify;
-    color: #102702;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: 700;
-    word-wrap: break-word;
-}
+
+
 
 article{
     width: 746px;
@@ -141,18 +137,37 @@ article{
     background: #8AC791;
     border-radius: 20px;
     position: relative;
-    flex-grow: 1;
+    flex-grow: 2;
+    margin: 2em;
     
 }
 
 article img{
+    display: block;
     width: 289.05px;
     height: 441.55px;
+    position: relative;
+    float: left;
     /*
     left: 41px;
     top: 32px;*/
-    position: absolute;
     border-radius: 20px;
+}
+
+article > p{
+  width: 346px;
+  height: 206px;/*
+  left: 364px;
+  top: 205px;*/
+  text-align: justify;
+  color: #102702;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  position: relative;
+  clear: left;
+  word-wrap: break-word;
+
 }
 
 nav {
@@ -163,6 +178,7 @@ nav {
     left: 0;
     border-radius: 20px;
     background: #225606;
+    flex-grow: 1;
 
 }
 
@@ -186,9 +202,11 @@ aside {
   width: 226px;
   height: 506px;
   padding: 10px;
+  margin-right: 20px;
   position: sticky;
   background-color: #8AC791;
   border-radius: 20px;
+  flex-grow: 1;
 }
 
  /* Dropdown menu */

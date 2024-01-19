@@ -23,20 +23,36 @@
             <img src="images/Logo.png", alt="", title="">
             <h1>TABA’S KHO</h1>
             <div>
-                <p>Tapez votre recherche...</p>
+                <input type="search" id="searchBox" onkeyup="searchFunction()" placeholder="Tapez votre recherche...">
+                <div id="searchResults"></div>
                 <div>
-                    <img src="images/loupe.png" alt="Un icone de loupe" title="Une Loupe">
+                    <img src="images/Accueil/icones/loupe.png" alt="Un icone de loupe" title="Une Loupe">
                 </div>
+                <script>
+                    function searchFunction() {
+                    // Déclare variables
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById('searchBox');
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("searchResults");
+                    li = ul.getElementsByTagName('li');
+                  
+                    // Loop through all list items, and hide those who don't match the search query
+                    for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                      txtValue = a.textContent || a.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                      } else {
+                        li[i].style.display = "none";
+                      }
+                    }
+                  }
+                </script>
                 
             </div>
         </header>
         <main>
-            <article>
-                <p>Quand ils apprennent de source "sûre" que le cannabis va être légalisé, un entrepreneur et sa famille décident de transformer leur boucherie sur le déclin en coffee-shop.</p>
-                <img src="images/affiche_serie.png" alt="affiche Family Business">
-                <h2>Family Business</h2>
-            </article>
-                
             <nav>
                 <ul class="dropdownmenu">
                     <li><a href="#">Séries</a></li>
@@ -49,9 +65,11 @@
                     <li><a href="#">Backstages</a></li>
                 </ul>
             </nav>
-            <figure>
-                <img src="images\Light button.svg" alt="" title="">
-            </figure>
+            <article>
+                <p>Quand ils apprennent de source "sûre" que le cannabis va être légalisé, un entrepreneur et sa famille décident de transformer leur boucherie sur le déclin en coffee-shop.</p>
+                <img src="images/affiche_serie.png" alt="affiche Family Business">
+                <h2>Family Business</h2>
+            </article>
             <aside>
                 <div class="slideshow-container">
                     <div class="slide fade">
@@ -104,6 +122,9 @@
                 </script>
             </aside>
         </main>
+        <figure>
+            <img src="images\Light button.svg" alt="" title="">
+        </figure>
         <footer>
             <p>À propos • Nous contacter • Mentions légales</p>
         </footer>
