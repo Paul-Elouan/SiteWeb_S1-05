@@ -52,52 +52,61 @@
                 
             </div>
         </header>
-        <main>
-            <nav class="menu_grand">
-                <ul class="dropdownmenu">
-                    <li><a href="#">Séries</a></li>
-                    <li><a href="#">Critiques</a>
-                        <ul>
-                            <li><a href="#">Presse</a></li>
-                            <li><a href="#">Utilisateurs</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Backstages</a></li>
+        <nav class="menu_grand">
+            <ul class="dropdownmenu">
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Critiques</a>
+                    <ul>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Utilisateurs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Backstages</a></li>
+            </ul>
+        </nav>
+        <div class="menu_burger">
+            <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+              
+            <nav class="menu">
+                <ul>
+                  <li><a href="#">Family Business</a></li>
+                  <li><a href="#">Séries</a></li>
+                  <li><a href="#">Critiques</a></li>
+                  <li><a href="#">Backstages</a></li>
+                  <li><a href="#">Saison 1</a></li>
+                  <li><a href="#">Saison 2</a></li>
+                  <li><a href="#">Saison 3</a></li>
                 </ul>
             </nav>
-            <div class="menu_burger">
-                <div class="burger-menu">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                  
-                <nav class="menu">
-                    <ul>
-                      <li><a href="#">Family Business</a></li>
-                      <li><a href="#">Séries</a></li>
-                      <li><a href="#">Critiques</a></li>
-                      <li><a href="#">Backstages</a></li>
-                      <li><a href="#">Saison 1</a></li>
-                      <li><a href="#">Saison 2</a></li>
-                      <li><a href="#">Saison 3</a></li>
-                    </ul>
-                </nav>
-            </div>
-         <script>
+        </div>
+        <script>
             const burgerMenu = document.querySelector('.burger-menu');
             const menu = document.querySelector('.menu');
-        
+    
             burgerMenu.addEventListener('click', () => {
                 burgerMenu.classList.toggle('open');
                 menu.classList.toggle('open');
             });
-         </script>
-            <article>
+        </script>
+        <main>
+            
+            <article class="article_grand">
+                <h2>Family Business</h2>
                 <p>Quand ils apprennent de source "sûre" que le cannabis va être légalisé, un entrepreneur et sa famille décident de transformer leur boucherie sur le déclin en coffee-shop.</p>
                 <img src="images/Liste_des_saisons/affiche_saisons/affiche_serie.png" alt="affiche Family Business">
-                <h2>Family Business</h2>
+                
             </article>
+            <div class="article_petit">
+                <article>
+                    <h2>Family Business</h2>
+                    <p>Quand ils apprennent de source "sûre" que le cannabis va être légalisé, un entrepreneur et sa famille décident de transformer leur boucherie sur le déclin en coffee-shop.</p>
+                </article>
+                <img src="images/Liste_des_saisons/affiche_saisons/affiche_serie.png" alt="affiche Family Business">
+            </div>
             <aside>
                 <h2 id="TENDANCES">Tendances</h2>
                 <div class="slideshow-container">

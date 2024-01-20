@@ -1,7 +1,5 @@
 
 body{
-    width: 100%;
-    height: 100%;
     padding: 0;
     margin: 0;
     background: #102702
@@ -10,7 +8,7 @@ body{
 header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between; 
   align-items: center;
 }
@@ -22,12 +20,13 @@ header {
 header h1 {
     width: 500px;
     height: 100px;
-    text-align: justify;
+    text-align: left;
     align-self: center;
     color: #BAFE1B; 
     font-size: 75px; 
     font-family: Inter; 
     font-weight: 700; 
+    padding-bottom: 20px;
 }
 
 header img {
@@ -35,12 +34,10 @@ header img {
     height: 196px;
     position: relative;
     float: left;
+    margin-left: 2em;
     padding-right: 10em;
 }
 
-header div p{
-  right: 20px;
-}
 
 
 footer {
@@ -66,6 +63,9 @@ header > div {
     background: #BAFE1B; 
     border-radius: 20px;
     padding-left: 10px;
+    margin-right: 1em;
+    flex-shrink: 0;
+    margin-left: 3em;
 }
 
 
@@ -96,6 +96,8 @@ header > div :nth-child(2) {
     clear: left;
     margin-left: 20px;
     margin-top: 7px;
+    align-items: center;
+    margin-right: 2px;
     border-radius: 20px;
 }
 
@@ -105,7 +107,7 @@ header > div > div > img {
     padding-left: 6px;
     padding-top: 8px;
     position: relative;
-    left: 17.5em;
+    right: -15.3em;
     bottom: 2.25em;
     border-radius: 20px;
 }
@@ -117,10 +119,15 @@ header > div > div > img {
 }*/
 
 main {
+  margin-left: 220px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.article_petit {
+  display: none;
 }
 
 article h2{
@@ -134,8 +141,7 @@ article h2{
     font-family: Inter;
     font-weight: 700;
     position: relative;
-    bottom: 11em;
-    left: 6.5em;
+    right: -6.45em;
     word-wrap: break-word;
 }
 
@@ -143,13 +149,14 @@ article h2{
 
 
 article{
-    width: 746px;
-    height: 506px;
-    background: #8AC791;
-    border-radius: 20px;
-    position: relative;
-    flex-grow: 2;
-    margin: 2em;
+  width: 746px;
+  height: 506px;
+  background: #8AC791;
+  border-radius: 20px;
+  position: relative;
+  flex-grow: 2;
+  margin: 2em;
+  padding: 2em;
     
 }
 
@@ -159,12 +166,12 @@ article img{
     height: 441.55px;
     position: relative;
     left: 2em;
-    bottom: 4.75em;
+    bottom: 15.75em;
     border-radius: 20px;
 }
 
 article > p{
-  width: 400px;
+  width: 330px;
   height: 70px;/*
   left: 364px;
   top: 205px;*/
@@ -175,7 +182,7 @@ article > p{
   font-weight: 700;
   position: relative;
   left: 17.5em;
-  top: 10em;
+  top: 2em;
   word-wrap: break-word;
 
 }
@@ -185,12 +192,12 @@ article > p{
 nav {
     width: 193px; 
     height: 370px; 
-    position: sticky;
+    position: fixed;
     padding-top: 25px;
     left: 0;
     border-radius: 20px;
     background: #225606;
-    flex-grow: 1;
+    align-self: center;
     margin-right: 2em;
     margin-left: 2em;
     margin-top: 2em;
@@ -223,7 +230,8 @@ aside {
   position: sticky;
   background-color: #8AC791;
   border-radius: 20px;
-  flex-grow: 1;
+  flex-grow: 0.3;
+  align-self: center;
   margin-right: 2em;
   margin-left: 2em;
   margin-bottom: 2em;
@@ -292,13 +300,17 @@ aside {
 .active {
   background-color: #717171;
 }
-
-@media screen and (max-width: 750px)
+/*1200*/
+@media screen and (max-width: 1000px)
 {   
-    main{
+    main
+    {
+        margin: 2em;
         orientation: portrait;
         display: flex;
         flex-direction: column;
+        align-items: center;
+
     }
     
     header {
@@ -310,14 +322,25 @@ aside {
       height: 5em;
     }
     header h1{
-      position: absolute;
+      position: relative;
       font-size: 3em;
       text-align: center;
     }
 
-    article {
+   
+
+    body{
+      padding: 2em;
+    }
+
+    main {
+      margin: 2em;
+    }
+
+    main > div > article {
       width: 80%;
-      padding: 0;
+      height: 7000px;
+      padding: 5em;
       height: 300px;
     }
     
@@ -326,23 +349,35 @@ aside {
       top: 5px;
       left: 5em;
     }
-    article > img{
-      width: 100%;
-      width: 84%;
-      top: 21em;
+    .article_petit {
+      display: block;
     }
-    article > h2{
+
+    .article_grand {
+      display: none;
+    }
+    main > div > img{
+      margin: 2em;
       width: 80%;
+    }
+
+
+    main > div > article > h2{
+      width: 80%;
+      text-align: center;
       position: relative;
+      margin-bottom: 20px;
       left: 35px;
-      bottom: 12.5em;
+      top: -2em;
       font-size: 45px;
     }
-    article > p{
+    main > div > article > p{
       width: 80%;
       position: relative;
-      top: 6em;
-      left: 37px;
+      margin-top: 2em;
+      top: -4em;
+      left: 2em;
+      margin-bottom: ;
       text-align: justify;
     }
     
