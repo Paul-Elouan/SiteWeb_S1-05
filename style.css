@@ -415,11 +415,19 @@ header[data-page="index"] img[data-page="index"] {
 }
 
 footer[data-page="index"] {
-  width: 100%;
-  height: 74px;
-  padding: 30px;
+  margin-top: auto;
+  padding: 10px;
   text-align: center;
-  background: #225606;
+  background-color: var(--color-secondary-light);
+  color: var(--color-background-dark);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.017em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer[data-page="index"] > p[data-page="index"] {
@@ -450,8 +458,8 @@ input[type="search"] {
 }
 
 .barre_de_recherche_petit > div :nth-child(2)[data-page="index"] {
-  width: 36px;
-  height: 38px;
+  width: 360em;
+  height: 388em;
   background: #b86e0d;
   display: inline-block;
   position: relative;
@@ -655,7 +663,6 @@ aside[data-page="index"] {
 /*1200*/
 @media screen and (max-width: 1000px) {
   main[data-page="index"] {
-    margin: 2em;
     orientation: portrait;
     display: flex;
     flex-direction: column;
@@ -697,9 +704,8 @@ aside[data-page="index"] {
     > div[data-page="index"]
     > article[data-page="index"] {
     width: 80%;
-    height: 7000px;
     padding: 5em;
-    height: 300px;
+    height: 450px;
     margin-right: 10em;
   }
 
@@ -835,10 +841,12 @@ aside[data-page="index"] {
   .menu {
     display: none;
     z-index: 1;
+    top: -15em;
   }
 
   /* Show the menu when the burger menu is clicked */
   .burger-menu.open + .menu {
     display: block;
+    top: 50px;
   }
 }
