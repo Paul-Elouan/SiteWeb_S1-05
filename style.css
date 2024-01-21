@@ -374,7 +374,7 @@ button {
 body[data-page="index"] {
   padding: 0;
   margin: 0;
-  background: #102702;
+  background: var(--color-background-light);
 }
 
 header[data-page="index"] {
@@ -394,7 +394,7 @@ header[data-page="index"] h1[data-page="index"] {
   height: 100px;
   text-align: left;
   align-self: center;
-  color: #bafe1b;
+  color: var(--color-accent-light);
   font-size: 75px;
   font-family: Inter;
   font-weight: 700;
@@ -432,7 +432,7 @@ footer[data-page="index"] {
 
 footer[data-page="index"] > p[data-page="index"] {
   text-align: center;
-  color: #e4fdd8;
+  color: var(--color-primary-light);
   font-size: 20px;
   font-family: Inter;
   font-weight: 700;
@@ -440,10 +440,10 @@ footer[data-page="index"] > p[data-page="index"] {
 }
 
 input[type="search"] {
-  background-color: #bafe1b;
+  background-color: var(--color-accent-light);
   border: none;
   border-radius: 25px;
-  color: #102702;
+  color: var(--color-background-dark);
   font-size: 15px;
   height: 30px;
   outline: none;
@@ -456,8 +456,6 @@ input[type="search"] {
   font-weight: 700;
   word-wrap: break-word;
 }
-
-
 
 header[data-page="index"]
   > div[data-page="index"]
@@ -472,12 +470,6 @@ header[data-page="index"]
   bottom: 2.25em;
   border-radius: 20px;
 }
-/*
-header > div > div > img {
-  width: 60%; 
-  height: 60%;
-  
-}*/
 
 main[data-page="index"] {
   margin-left: 220px;
@@ -497,7 +489,7 @@ article[data-page="index"] h2 {
   left: 345px;
   top: 36px;*/
   text-align: center;
-  color: #102702;
+  color: var(--color-background-dark);
   font-size: 50px;
   font-family: Inter;
   font-weight: 700;
@@ -509,7 +501,7 @@ article[data-page="index"] h2 {
 article[data-page="index"] {
   width: 746px;
   height: 506px;
-  background: #8ac791;
+  background: var(--color-primary-light);
   border-radius: 20px;
   position: relative;
   flex-grow: 2;
@@ -533,7 +525,7 @@ article[data-page="index"] > p[data-page="index"] {
   left: 364px;
   top: 205px;*/
   text-align: justify;
-  color: #102702;
+  color: var(--color-background-dark);
   font-size: 20px;
   font-family: Inter;
   font-weight: 700;
@@ -551,7 +543,7 @@ nav[data-page="index"] {
   left: 0;
   top: 16em;
   border-radius: 20px;
-  background: #225606;
+  background: var(--color-secondary-light);
   align-self: center;
   margin-right: 2em;
   margin-left: 2em;
@@ -560,7 +552,7 @@ nav[data-page="index"] {
 
 a[data-page="index"] {
   text-decoration: none;
-  color: #e4fdd8;
+  color: var(--color-background-dark);
 }
 
 img[data-page="index"] {
@@ -582,7 +574,7 @@ aside[data-page="index"] {
   padding: 10px;
   margin-right: 20px;
   position: sticky;
-  background-color: #8ac791;
+  background-color: var(--color-primary-light);
   border-radius: 20px;
   flex-grow: 0.3;
   align-self: center;
@@ -702,10 +694,10 @@ aside[data-page="index"] {
   }
 
   input[type="search"] {
-    background-color: #bafe1b;
+    background-color: var(--color-accent-light);
     border: none;
     border-radius: 25px;
-    color: #102702;
+    color: var(--color-background-light);
     font-size: 15px;
     height: 30px;
     outline: none;
@@ -740,7 +732,7 @@ aside[data-page="index"] {
   .barre_de_recherche_petit > div[data-page="index"]:nth-child(2) {
     width: 26px;
     height: 28px;
-    background: #225606;
+    background: var(--color-secondary-light);
     display: inline-block;
     position: relative;
     margin-left: 20px;
@@ -807,21 +799,21 @@ aside[data-page="index"] {
   }
   .menu > ul[data-page="index"] > li[data-page="index"] {
     list-style: none;
-    background-color: #225606;
+    background-color: var(--color-secondary-light);
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
   }
 
   .menu > ul[data-page="index"] > li[data-page="index"]:hover {
-    background-color: #e4fdd8;
+    background-color: var(--color-primary-light);
   }
 
   .menu
     > ul[data-page="index"]
     > li[data-page="index"]:hover
     > a[data-page="index"] {
-    color: #225606;
+    color: var(--color-secondary-light);
   }
   .burger-menu {
     position: relative;
@@ -837,7 +829,7 @@ aside[data-page="index"] {
     display: block;
     width: 100%;
     height: 0.25rem;
-    background-color: #bafe1b;
+    background-color: var(--color-accent-light);
     margin: 0.2rem 0;
   }
 
