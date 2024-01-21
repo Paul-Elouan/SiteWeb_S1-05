@@ -1,54 +1,281 @@
-body {
-    width: 1280px;
-    height: 1299px;
-    background: #102702;
+@font-face {
+    font-family: 'tussilago';
+    src: url("polices/tussilagorg-regular.woff2") format("woff2"),
+         url("polices/tussilagorg-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1{
+body[data-page="backstage"] {
+    background-color: #102702;
+    font-family: 'tussilago';
+    margin: 0;
+}
+
+header[data-page="backstage"] div {
     display: flex;
-    width: 957px;
-    height: 124px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #BAFE1B;
-    text-align: center;
-    font-family: Inter;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -1.275px;
+    justify-content: space-between;
 }
 
-h2{
+header[data-page="backstage"] div div {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+header[data-page="backstage"] h1 {
+    color: #bafe1b;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+header[data-page="backstage"] h2 {
+    color: #bafe1b;
+    text-align: right;
+    align-self: flex-end;
+}
+
+header[data-page="backstage"] nav {
     display: flex;
-    width: 334px;
-    height: 68px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #BAFE1B;
-    font-family: NATS;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -1.02px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-footer {
-    width: 1280px;
-    height: 74px;
+
+.menu-burger[data-page="backstage"] {
+    display: none;
+}
+
+header[data-page="backstage"] h3 {
+    display: none;
+}
+
+header[data-page="backstage"] nav {
+    justify-content: center;
+}
+
+nav[data-page="backstage"] img {
+    height: 48px;
+    width: 48px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.Burger[data-page="backstage"] {
+    display: none;
+}
+
+header[data-page="backstage"] p {
+    padding: 1em;
+    color: #E4FDD8;
+    background-color: #225606;
     flex-shrink: 0;
 }
 
-p > footer {
-    color: #102702;
+.bordDroit[data-page="backstage"] {
+    border-radius: 0 20px 20px 0;
+}
+
+.bordGauche[data-page="backstage"] {
+    border-radius: 20px 0 0 20px;
+}
+
+header[data-page="backstage"] a {
+    background-color: #E4FDD8;
+    padding: 1em;
+    border-radius: 20px;
+    color: #225606;
+}
+
+main[data-page="backstage"] div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+main[data-page="backstage"] div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+main[data-page="backstage"] article {
+    background-color: #8AC791;
+    width: 90%;
+    height: auto;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+main[data-page="backstage"] article img {
+    width: 560px;
+}
+
+main[data-page="backstage"] iframe {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.interview[data-page="backstage"] {
+    width: 721px;
+    height: 574px;
+    display: flex;
+}
+
+.interview[data-page="backstage"] div {
+    flex-direction: column;
+}
+
+.interview[data-page="backstage"] h2 {
+    width: 100%;
     text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.34px;
+}
+
+.interview[data-page="backstage"] div div {
+    flex-direction: row;
+    width: 100%;
+}
+
+.interview[data-page="backstage"] div div div {
+    flex-direction: column;
+    width: 5%;
+}
+
+
+footer[data-page="backstage"] {
+    background-color: #225606;
+    padding: 1em;
+    text-align: center;
+}
+
+img[data-page="backstage"] {
+    border-radius: 40px;
+    flex-shrink: 0;
+}
+
+.interview[data-page="backstage"] iframe {
+
+    width: 360px;
+    height: 200px;
+}
+
+.betisier[data-page="backstage"]{
+    width: 730px;
+    height: 317px;
+    margin: 1em;
+    text-align: center;
+}
+
+.betisier[data-page="backstage"] iframe {
+    width: 360px;
+    height: 200px;
+}
+
+.betisier[data-page="backstage"] div {
+    display: flex;
+}
+
+.betisier[data-page="backstage"] div div {
+    flex-direction: row;
+}
+
+header[data-page="backstage"] div img {
+    width: 195px;
+}
+
+.bestof[data-page="backstage"] {
+    width: 415px;
+    height: 919px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.bestof[data-page="backstage"] iframe {
+    width: 360px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.mobile-container[data-page="backstage"] {
+    display: none;
+}
+
+.topnav[data-page="backstage"] {
+    display: none;
+}
+
+footer[data-page="backstage"] > p[data-page="backstage"] {
+    text-align: center; 
+    color: #E4FDD8; 
+    font-size: 20px; 
+    font-family: 'Inter'; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 428px) {
+    body[data-page="backstage"] {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Burger[data-page="backstage"] {
+        display: none;
+    }
+
+    .topnav[data-page="backstage"] {
+        display: inline;
+        overflow: hidden;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .topnav[data-page="backstage"] #myLinks {
+        display: none;
+    }
+
+    .topnav[data-page="backstage"] a {
+        color: #102702;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        align-self: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .topnav[data-page="backstage"] a.icon {
+        background: #102702;
+        display: inline;
+        align-self: center;
+    }
+
+    .topnav[data-page="backstage"] a {
+        background-color: #225606;
+        text-align: center;
+    }
+
+    .topnav[data-page="backstage"] a:hover {
+        background-color: #8AC791;
+        color: black;
+    }
+
+    .topnav[data-page="backstage"] a.icon:hover {
+        background-color: #102702;
+    }
+
+    .active[data-page="backstage"] {
+        background-color: #8AC791;
+        color: #102702;
+    }
+
+    .topnav[data-page="backstage"] img {
+        border-radius: 0;
+    }
 }
