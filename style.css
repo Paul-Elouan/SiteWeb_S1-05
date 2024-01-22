@@ -860,31 +860,31 @@ body[data-page="backstage"] {
     margin: 0;
 }
 
-header[data-page="backstage"] div {
+header[data-page="backstage"] div[data-page="backstage"] {
     display: flex;
     justify-content: space-between;
 }
 
-header[data-page="backstage"] div div {
+header[data-page="backstage"] div[data-page="backstage"] div[data-page="backstage"] {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
 }
 
-header[data-page="backstage"] h1 {
+header[data-page="backstage"] h1[data-page="backstage"] {
     color: #bafe1b;
     align-items: center;
     align-self: center;
     text-align: center;
 }
 
-header[data-page="backstage"] h2 {
+header[data-page="backstage"] h2[data-page="backstage"] {
     color: #bafe1b;
     text-align: right;
     align-self: flex-end;
 }
 
-header[data-page="backstage"] nav {
+header[data-page="backstage"] nav[data-page="backstage"] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -894,15 +894,15 @@ header[data-page="backstage"] nav {
     display: none;
 }
 
-header[data-page="backstage"] h3 {
+header[data-page="backstage"] h3[data-page="backstage"] {
     display: none;
 }
 
-header[data-page="backstage"] nav {
+header[data-page="backstage"] nav[data-page="backstage"] {
     justify-content: center;
 }
 
-nav[data-page="backstage"] img {
+nav[data-page="backstage"] img[data-page="backstage"] {
     height: 48px;
     width: 48px;
     align-self: center;
@@ -913,7 +913,7 @@ nav[data-page="backstage"] img {
     display: none;
 }
 
-header[data-page="backstage"] p {
+header[data-page="backstage"] p[data-page="backstage"] {
     padding: 1em;
     color: #E4FDD8;
     background-color: #225606;
@@ -928,14 +928,14 @@ header[data-page="backstage"] p {
     border-radius: 20px 0 0 20px;
 }
 
-header[data-page="backstage"] a {
+header[data-page="backstage"] a[data-page="backstage"] {
     background-color: #E4FDD8;
     padding: 1em;
     border-radius: 20px;
     color: #225606;
 }
 
-main[data-page="backstage"] div {
+main[data-page="backstage"] div[data-page="backstage"] {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -943,7 +943,7 @@ main[data-page="backstage"] div {
     flex-shrink: 0;
 }
 
-main[data-page="backstage"] div div {
+main[data-page="backstage"] div[data-page="backstage"] div[data-page="backstage"] {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -951,7 +951,7 @@ main[data-page="backstage"] div div {
     flex-wrap: nowrap;
 }
 
-main[data-page="backstage"] article {
+main[data-page="backstage"] article[data-page="backstage"] {
     background-color: #8AC791;
     width: 90%;
     height: auto;
@@ -961,11 +961,11 @@ main[data-page="backstage"] article {
     flex-shrink: 0;
 }
 
-main[data-page="backstage"] article img {
+main[data-page="backstage"] article[data-page="backstage"] img[data-page="backstage"] {
     width: 560px;
 }
 
-main[data-page="backstage"] iframe {
+main[data-page="backstage"] iframe[data-page="backstage"] {
     border-radius: 20px;
     max-width: 100%;
 }
@@ -976,21 +976,21 @@ main[data-page="backstage"] iframe {
     display: flex;
 }
 
-.interview[data-page="backstage"] div {
+.interview[data-page="backstage"] div[data-page="backstage"] {
     flex-direction: column;
 }
 
-.interview[data-page="backstage"] h2 {
+.interview[data-page="backstage"] h2[data-page="backstage"] {
     width: 100%;
     text-align: center;
 }
 
-.interview[data-page="backstage"] div div {
+.interview[data-page="backstage"] div[data-page="backstage"] div[data-page="backstage"] {
     flex-direction: row;
     width: 100%;
 }
 
-.interview[data-page="backstage"] div div div {
+.interview[data-page="backstage"] div[data-page="backstage"] div[data-page="backstage"] div[data-page="backstage"] {
     flex-direction: column;
     width: 5%;
 }
@@ -1007,7 +1007,7 @@ img[data-page="backstage"] {
     flex-shrink: 0;
 }
 
-.interview[data-page="backstage"] iframe {
+.interview[data-page="backstage"] iframe[data-page="backstage"] {
 
     width: 360px;
     height: 200px;
@@ -1020,20 +1020,20 @@ img[data-page="backstage"] {
     text-align: center;
 }
 
-.betisier[data-page="backstage"] iframe {
+.betisier[data-page="backstage"] iframe[data-page="backstage"] {
     width: 360px;
     height: 200px;
 }
 
-.betisier[data-page="backstage"] div {
+.betisier[data-page="backstage"] div[data-page="backstage"] {
     display: flex;
 }
 
-.betisier[data-page="backstage"] div div {
+.betisier[data-page="backstage"] div[data-page="backstage"] div[data-page="backstage"] {
     flex-direction: row;
 }
 
-header[data-page="backstage"] div img {
+header[data-page="backstage"] div[data-page="backstage"] img[data-page="backstage"] {
     width: 195px;
 }
 
@@ -1044,7 +1044,7 @@ header[data-page="backstage"] div img {
     text-align: center;
 }
 
-.bestof[data-page="backstage"] iframe {
+.bestof[data-page="backstage"] iframe[data-page="backstage"] {
     width: 360px;
     height: 200px;
     max-width: 100%;
@@ -1088,7 +1088,7 @@ footer[data-page="backstage"] > p[data-page="backstage"] {
         display: none;
     }
 
-    .topnav[data-page="backstage"] a {
+    .topnav[data-page="backstage"] a[data-page="backstage"] {
         color: #102702;
         padding: 0;
         text-decoration: none;
@@ -1098,23 +1098,23 @@ footer[data-page="backstage"] > p[data-page="backstage"] {
         flex-wrap: nowrap;
     }
 
-    .topnav[data-page="backstage"] a.icon {
+    .topnav[data-page="backstage"] a[data-page="backstage"].icon {
         background: #102702;
         display: inline;
         align-self: center;
     }
 
-    .topnav[data-page="backstage"] a {
+    .topnav[data-page="backstage"] a[data-page="backstage"] {
         background-color: #225606;
         text-align: center;
     }
 
-    .topnav[data-page="backstage"] a:hover {
+    .topnav[data-page="backstage"] a[data-page="backstage"]:hover {
         background-color: #8AC791;
         color: black;
     }
 
-    .topnav[data-page="backstage"] a.icon:hover {
+    .topnav[data-page="backstage"] a[data-page="backstage"].icon:hover {
         background-color: #102702;
     }
 
@@ -1123,7 +1123,7 @@ footer[data-page="backstage"] > p[data-page="backstage"] {
         color: #102702;
     }
 
-    .topnav[data-page="backstage"] img {
+    .topnav[data-page="backstage"] img[data-page="backstage"] {
         border-radius: 0;
     }
 }
